@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now Hiring Drivers | C&S Services Inc. - FedEx Ground Partner (Fort Worth & Arlington)</title>
+    <meta name="description" content="Join C&S Services Inc., an Independent Service Provider for FedEx Ground in Fort Worth & Arlington, TX. Flexible schedules: Weekdays, 3 Days a Week, Weekends, Peak Season & Regular positions! Call Robert Alicea at 914-500-8407.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Configure Tailwind Theme Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        fedex: {
+                            purple: '#4D148C',
+                            purpleDark: '#350d63',
+                            purpleLight: '#6b21a8',
+                            orange: '#FF6600',
+                            orangeHover: '#e65c00',
+                            green: '#00A859'
+                        }
+                    },
+                    boxShadow: {
+                        'glow-orange': '0 10px 30px -5px rgba(255, 102, 0, 0.45)',
+                        'glow-purple': '0 10px 30px -5px rgba(77, 20, 140, 0.35)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Animations & Decorative Styles */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+        @keyframes pulseRing {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 102, 0, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(255, 102, 0, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 102, 0, 0); }
+        }
+        @keyframes truckDrive {
+            0% { transform: translateX(-8px); }
+            50% { transform: translateX(6px); }
+            100% { transform: translateX(-8px); }
+        }
+        .animate-float {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+        .animate-pulse-orange {
+            animation: pulseRing 2s infinite;
+        }
+        .animate-truck {
+            animation: truckDrive 3.5s ease-in-out infinite;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 85% 15%, rgba(255, 102, 0, 0.22) 0%, rgba(77, 20, 140, 0) 45%),
+                        linear-gradient(135deg, #250847 0%, #4D148C 55%, #380e68 100%);
+        }
+        .schedule-card.selected {
+            border-color: #FF6600;
+            background-color: #fff7ed;
+            box-shadow: 0 10px 25px -5px rgba(255, 102, 0, 0.2);
+        }
+        /* Hide scrollbar for clean horizontal pills on small screens */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased pb-24 md:pb-0 selection:bg-fedex-orange selection:text-white">
+
+    <!-- TOP URGENT HIRING BANNER -->
+    <div class="bg-fedex-orange text-white text-xs sm:text-sm font-bold py-2.5 px-4 text-center shadow-sm relative z-30">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-2">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-white text-fedex-orange text-[11px] font-black uppercase tracking-wider">
+                Peak Season &amp; Regular Jobs
+            </span>
+            <span>Immediate Openings in <strong>Fort Worth &amp; Arlington Terminals!</strong></span>
+            <a href="tel:9145008407" class="underline hover:text-slate-900 font-black ml-1">Call Robert: (914) 500-8407</a>
+        </div>
+    </div>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-fedex-purple flex items-center justify-center shadow-md group-hover:bg-fedex-orange transition-colors">
+                    <!-- Delivery Truck SVG -->
+                    <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="font-black text-lg sm:text-xl tracking-tight text-fedex-purple">C&amp;S SERVICES INC.</span>
+                        <span class="hidden sm:inline-block text-[11px] font-bold uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 border border-emerald-300">ISP Partner</span>
+                    </div>
+                    <p class="text-xs font-semibold text-slate-500">Contracted Service Provider for <span class="text-fedex-purple font-bold">FedEx</span><span class="text-fedex-green font-bold"> Ground</span></p>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation & Quick Actions -->
+            <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
+                <a href="#schedules" class="hover:text-fedex-purple transition-colors">Schedules</a>
+                <a href="#culture" class="hover:text-fedex-purple transition-colors">Why C&amp;S</a>
+                <a href="#share-hub" class="hover:text-fedex-purple transition-colors">Driver Share Hub</a>
+                <button onclick="openManagerModal()" class="text-xs font-bold text-slate-500 hover:text-fedex-purple flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-slate-200 hover:border-fedex-purple transition-all" title="Manager Notification Settings & Inbox">
+                    <span>🔒</span> Manager Setup
+                </button>
+            </div>
+
+            <!-- Right CTA Buttons -->
+            <div class="flex items-center gap-2">
+                <button onclick="openShareModal()" class="p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs flex items-center gap-1.5 transition-all" title="Share Job Page">
+                    <svg class="w-4 h-4 text-fedex-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
+                    </svg>
+                    <span class="hidden sm:inline">Share Ad</span>
+                </button>
+                <a href="#apply-form" class="px-4 py-2.5 rounded-xl bg-fedex-orange hover:bg-fedex-orangeHover text-white font-extrabold text-xs sm:text-sm shadow-md transition-all transform active:scale-95">
+                    Apply Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-gradient text-white relative overflow-hidden pt-10 pb-16 sm:py-20">
+        <!-- Referral Banner (Shown automatically if shared by a driver with ?ref=Name) -->
+        <div id="referralWelcomeBanner" class="hidden max-w-3xl mx-auto mb-6 px-4">
+            <div class="bg-emerald-500/20 border border-emerald-400/50 backdrop-blur-md rounded-2xl p-3.5 text-center flex items-center justify-center gap-2 text-sm font-bold text-emerald-200 shadow-lg">
+                <span>🎉</span>
+                <span id="referralWelcomeText">You were invited by a C&amp;S Services team member! Fast-track application enabled.</span>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Left Column: Core Pitch -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 border border-white/25 backdrop-blur-sm text-xs sm:text-sm font-bold tracking-wide text-orange-300">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                        <span>FORT WORTH &amp; ARLINGTON TERMINALS • HIRING NOW</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1]">
+                        Drive With a Team That <span class="text-fedex-orange underline decoration-white/30">Actually Has Your Back.</span>
+                    </h1>
+
+                    <p class="text-base sm:text-xl text-purple-100 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        At <strong class="text-white">C&amp;S Services Inc.</strong> (FedEx Ground Partner), we need <strong class="text-orange-300">good, reliable people</strong> with a valid driver’s license willing to work. Whether you want <strong class="text-white">Weekdays, 3 Days a Week, Weekends, or Peak Season</strong>—you name it, we have a spot for you!
+                    </p>
+
+                    <!-- Key Highlights Pills -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-2.5 pt-1">
+                        <span class="px-3.5 py-2 rounded-xl bg-white/10 border border-white/15 text-xs sm:text-sm font-bold flex items-center gap-1.5">
+                            <span class="text-emerald-400">✔</span> Valid Driver's License (No CDL Required)
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl bg-white/10 border border-white/15 text-xs sm:text-sm font-bold flex items-center gap-1.5">
+                            <span class="text-emerald-400">✔</span> Dynamic, Friendly &amp; Fun Culture
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl bg-white/10 border border-white/15 text-xs sm:text-sm font-bold flex items-center gap-1.5">
+                            <span class="text-emerald-400">✔</span> We Support You &amp; Never Let You Down
+                        </span>
+                    </div>
+
+                    <!-- Primary Call / Text / Apply Action Buttons -->
+                    <div class="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3.5">
+                        <a href="#apply-form" class="px-7 py-4 rounded-2xl bg-fedex-orange hover:bg-fedex-orangeHover text-white font-black text-base sm:text-lg shadow-glow-orange flex items-center justify-center gap-2.5 transition-all transform hover:-translate-y-0.5 animate-pulse-orange">
+                            <span>🚀 Apply in 60 Seconds</span>
+                        </a>
+                        <a href="tel:9145008407" class="px-6 py-4 rounded-2xl bg-white hover:bg-slate-100 text-fedex-purple font-black text-base sm:text-lg shadow-lg flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5">
+                            <span>📞 Call Robert: (914) 500-8407</span>
+                        </a>
+                        <a href="sms:9145008407?body=Hi%20Robert,%20I%20saw%20the%20C%26S%20Services%20FedEx%20Ground%20hiring%20page%20and%20I%20am%20interested%20in%20driving!" class="px-5 py-4 rounded-2xl bg-purple-900/70 hover:bg-purple-900 border border-white/30 text-white font-bold text-base flex items-center justify-center gap-2 transition-all">
+                            <span>💬 Text Us</span>
+                        </a>
+                    </div>
+
+                    <p class="text-xs text-purple-200 font-medium">
+                        Direct Hiring Manager: <strong class="text-white">Robert Alicea</strong> • Fast Phone Interviews • Start Right Away
+                    </p>
+                </div>
+
+                <!-- Right Column: Visual Culture & Fast Facts Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-7 shadow-2xl relative">
+                        <!-- Animated Delivery Truck Graphic Header -->
+                        <div class="flex items-center justify-between bg-slate-900/60 rounded-2xl p-4 mb-6 border border-white/10">
+                            <div>
+                                <span class="text-[11px] font-extrabold uppercase tracking-widest text-orange-400 block">FedEx Ground Operations</span>
+                                <h3 class="text-lg font-black text-white">C&amp;S Services Inc. Squad</h3>
+                                <p class="text-xs text-slate-300">Fort Worth &amp; Arlington Terminals</p>
+                            </div>
+                            <div class="animate-truck">
+                                <svg class="w-16 h-12" viewBox="0 0 64 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="6" width="38" height="24" rx="3" fill="#ffffff"/>
+                                    <path d="M40 12H52L59 20V30H40V12Z" fill="#ffffff"/>
+                                    <path d="M43 15H50.5L55.5 21H43V15Z" fill="#1e293b"/>
+                                    <rect x="6" y="13" width="16" height="5" rx="1" fill="#4D148C"/>
+                                    <rect x="23" y="13" width="12" height="5" rx="1" fill="#00A859"/>
+                                    <rect x="2" y="27" width="57" height="3" fill="#FF6600"/>
+                                    <circle cx="14" cy="31" r="5" fill="#FF6600" stroke="#0f172a" stroke-width="2"/>
+                                    <circle cx="49" cy="31" r="5" fill="#FF6600" stroke="#0f172a" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Promise Quote -->
+                        <blockquote class="bg-white text-slate-900 rounded-2xl p-5 shadow-md mb-5">
+                            <div class="flex items-center gap-1 text-amber-400 text-sm mb-1">
+                                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                <span class="text-xs font-bold text-slate-500 ml-1">Driver-First Company</span>
+                            </div>
+                            <p class="text-sm sm:text-base font-bold text-slate-800 leading-snug">
+                                “We are a good company looking for good people. We run a dynamic, friendly, and fun environment. <span class="text-fedex-purple underline decoration-fedex-orange decoration-2">We help our drivers and we NEVER let them down.</span>”
+                            </p>
+                            <footer class="mt-3 flex items-center justify-between text-xs font-bold text-slate-500 border-t border-slate-100 pt-2.5">
+                                <span>— Robert Alicea, Manager</span>
+                                <a href="tel:9145008407" class="text-fedex-orange hover:underline">📞 914-500-8407</a>
+                            </footer>
+                        </blockquote>
+
+                        <!-- Terminal Locations Grid -->
+                        <div class="grid grid-cols-2 gap-3 text-left">
+                            <div class="bg-white/10 rounded-xl p-3.5 border border-white/15">
+                                <span class="text-xs text-orange-300 font-bold block">📍 Terminal Area 1</span>
+                                <span class="text-base font-black text-white">Fort Worth, TX</span>
+                                <span class="text-[11px] text-purple-200 block mt-0.5">Multiple Routes Open</span>
+                            </div>
+                            <div class="bg-white/10 rounded-xl p-3.5 border border-white/15">
+                                <span class="text-xs text-emerald-300 font-bold block">📍 Terminal Area 2</span>
+                                <span class="text-base font-black text-white">Arlington, TX</span>
+                                <span class="text-[11px] text-purple-200 block mt-0.5">Peak &amp; Regular Spots</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FLEXIBLE SCHEDULES SECTION ("YOU NAME IT!") -->
+    <section id="schedules" class="py-14 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="px-3.5 py-1.5 rounded-full bg-purple-100 text-fedex-purple font-extrabold text-xs uppercase tracking-wider">
+                Schedules Built Around Your Life
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3 tracking-tight">
+                Pick Your Schedule — <span class="text-fedex-orange">You Name It!</span>
+            </h2>
+            <p class="text-slate-600 mt-3 text-base sm:text-lg">
+                Whether you want a full-time career route, 3 days a week, or weekend cash, we have openings ready right now. <strong>Tap any schedule below to select it for your application:</strong>
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- Schedule 1: Weekdays / Full-Time Regular -->
+            <div onclick="selectScheduleCard('Weekdays / Full-Time Regular (5-6 Days)', this)" class="schedule-card cursor-pointer bg-white rounded-3xl p-6 border-2 border-slate-200 hover:border-fedex-orange transition-all shadow-sm hover:shadow-xl flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-12 h-12 rounded-2xl bg-purple-100 text-fedex-purple flex items-center justify-center text-2xl font-black">📅</span>
+                        <span class="text-xs font-extrabold uppercase px-2.5 py-1 rounded-full bg-purple-50 text-fedex-purple border border-purple-200">Year-Round</span>
+                    </div>
+                    <h3 class="text-xl font-black text-slate-900 group-hover:text-fedex-purple transition-colors">Weekdays &amp; Full-Time</h3>
+                    <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                        Looking for a steady, full-time regular job? Run 5 to 6 days a week with consistent routes and strong weekly paychecks.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-extrabold text-fedex-orange">
+                    <span>Click to Select Schedule</span>
+                    <span>→</span>
+                </div>
+            </div>
+
+            <!-- Schedule 2: 3 Days a Week -->
+            <div onclick="selectScheduleCard('3 Days a Week (Part-Time Flex)', this)" class="schedule-card cursor-pointer bg-white rounded-3xl p-6 border-2 border-slate-200 hover:border-fedex-orange transition-all shadow-sm hover:shadow-xl flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-12 h-12 rounded-2xl bg-orange-100 text-fedex-orange flex items-center justify-center text-2xl font-black">⚡</span>
+                        <span class="text-xs font-extrabold uppercase px-2.5 py-1 rounded-full bg-orange-50 text-fedex-orange border border-orange-200">Super Popular</span>
+                    </div>
+                    <h3 class="text-xl font-black text-slate-900 group-hover:text-fedex-orange transition-colors">3 Days a Week</h3>
+                    <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                        Need balance for school, family, or another commitment? Work a solid 3-day schedule that fits your life without burning out.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-extrabold text-fedex-orange">
+                    <span>Click to Select Schedule</span>
+                    <span>→</span>
+                </div>
+            </div>
+
+            <!-- Schedule 3: Weekends Only -->
+            <div onclick="selectScheduleCard('Weekends Only (Sat & Sun)', this)" class="schedule-card cursor-pointer bg-white rounded-3xl p-6 border-2 border-slate-200 hover:border-fedex-orange transition-all shadow-sm hover:shadow-xl flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl font-black">🏡</span>
+                        <span class="text-xs font-extrabold uppercase px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">Easy Residential</span>
+                    </div>
+                    <h3 class="text-xl font-black text-slate-900 group-hover:text-emerald-700 transition-colors">Weekends Only</h3>
+                    <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                        Have a weekday job or classes? Drive Saturdays, Sundays, or both! Weekend routes are mostly residential houses and super straightforward.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-extrabold text-fedex-orange">
+                    <span>Click to Select Schedule</span>
+                    <span>→</span>
+                </div>
+            </div>
+
+            <!-- Schedule 4: Peak Season / You Name It -->
+            <div onclick="selectScheduleCard('Peak Season Rush / Custom Schedule', this)" class="schedule-card cursor-pointer bg-white rounded-3xl p-6 border-2 border-slate-200 hover:border-fedex-orange transition-all shadow-sm hover:shadow-xl flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl font-black">🔥</span>
+                        <span class="text-xs font-extrabold uppercase px-2.5 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200">Immediate Start</span>
+                    </div>
+                    <h3 class="text-xl font-black text-slate-900 group-hover:text-amber-600 transition-colors">Peak Season &amp; Custom</h3>
+                    <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                        Jump in for the big Peak Season rush to stack serious money—with permanent year-round spots open for reliable drivers!
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-extrabold text-fedex-orange">
+                    <span>Click to Select Schedule</span>
+                    <span>→</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY DRIVERS LOVE C&S SERVICES INC. (CULTURE & SUPPORT) -->
+    <section id="culture" class="py-14 sm:py-20 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Left Column: Culture Messaging -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="px-3.5 py-1.5 rounded-full bg-fedex-orange/20 border border-fedex-orange/40 text-orange-300 font-extrabold text-xs uppercase tracking-wider">
+                        The C&amp;S Services Difference
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-black tracking-tight leading-tight">
+                        We Are a Good Company Looking for <span class="text-fedex-orange">Good People.</span>
+                    </h2>
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                        A lot of companies treat drivers like just a number. Not here. At <strong class="text-white">C&amp;S Services Inc.</strong>, we’ve built a <strong class="text-white">very dynamic, friendly, and fun environment</strong> across our Fort Worth and Arlington terminals.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 bg-slate-800/80 p-4 rounded-2xl border border-slate-700">
+                            <div class="w-10 h-10 rounded-xl bg-fedex-orange text-white flex items-center justify-center font-black shrink-0 text-lg">🤝</div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">We Help Our Drivers — We Never Let You Down</h4>
+                                <p class="text-sm text-slate-300 mt-1">If you hit a heavy day or run into an issue on your route, management and teammates step up to support you. You are never left stranded.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 bg-slate-800/80 p-4 rounded-2xl border border-slate-700">
+                            <div class="w-10 h-10 rounded-xl bg-fedex-purpleLight text-white flex items-center justify-center font-black shrink-0 text-lg">⚡</div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Dynamic, Friendly &amp; Fun Team Atmosphere</h4>
+                                <p class="text-sm text-slate-300 mt-1">Start your mornings with positive energy, organized trucks, modern GPS routing tablets (GroundCloud), and leadership that respects your hustle.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 bg-slate-800/80 p-4 rounded-2xl border border-slate-700">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-black shrink-0 text-lg">📍</div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Fort Worth &amp; Arlington Terminal Openings</h4>
+                                <p class="text-sm text-slate-300 mt-1">We operate out of multiple terminals and delivery zones in Fort Worth and Arlington, giving you great route options close to home.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: What We Require Checklist -->
+                <div class="lg:col-span-6">
+                    <div class="bg-gradient-to-br from-fedex-purple to-slate-900 rounded-3xl p-7 sm:p-9 border border-white/15 shadow-2xl">
+                        <div class="inline-block px-3 py-1 rounded-lg bg-white/10 text-orange-300 text-xs font-bold uppercase mb-3">
+                            Simple Qualification Checklist
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-black text-white mb-2">What You Need to Join the Squad</h3>
+                        <p class="text-purple-200 text-sm mb-6">If you check these boxes, we want to talk to you today:</p>
+
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3.5 bg-white/10 p-3.5 rounded-2xl border border-white/10">
+                                <span class="w-7 h-7 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-sm shrink-0">✓</span>
+                                <span class="font-bold text-sm sm:text-base text-white">Valid Driver’s License <span class="text-orange-300 font-normal text-xs sm:text-sm">(Standard License OK — No CDL needed!)</span></span>
+                            </li>
+                            <li class="flex items-center gap-3.5 bg-white/10 p-3.5 rounded-2xl border border-white/10">
+                                <span class="w-7 h-7 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-sm shrink-0">✓</span>
+                                <span class="font-bold text-sm sm:text-base text-white">Reliable, Dependable &amp; Willing to Work</span>
+                            </li>
+                            <li class="flex items-center gap-3.5 bg-white/10 p-3.5 rounded-2xl border border-white/10">
+                                <span class="w-7 h-7 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-sm shrink-0">✓</span>
+                                <span class="font-bold text-sm sm:text-base text-white">21+ Years Old with a Clean Driving Record</span>
+                            </li>
+                            <li class="flex items-center gap-3.5 bg-white/10 p-3.5 rounded-2xl border border-white/10">
+                                <span class="w-7 h-7 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-sm shrink-0">✓</span>
+                                <span class="font-bold text-sm sm:text-base text-white">Positive Attitude &amp; Team Player Mentality</span>
+                            </li>
+                        </ul>
+
+                        <!-- Direct Call Box Inside Checklist -->
+                        <div class="mt-7 pt-6 border-t border-white/15 flex flex-col sm:flex-row items-center justify-between gap-4">
+                            <div>
+                                <span class="text-xs uppercase tracking-wider text-purple-200 font-bold block">Want to skip the line?</span>
+                                <span class="text-lg font-black text-white">Call Robert Alicea Directly</span>
+                            </div>
+                            <a href="tel:9145008407" class="w-full sm:w-auto text-center px-6 py-3.5 rounded-xl bg-fedex-orange hover:bg-fedex-orangeHover text-white font-black text-base shadow-lg transition-all">
+                                📞 914-500-8407
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 60-SECOND APPLICATION FORM SECTION -->
+    <section id="apply-form" class="py-16 sm:py-24 max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="bg-white rounded-3xl shadow-2xl border-2 border-slate-100 overflow-hidden">
+            
+            <!-- Form Header -->
+            <div class="bg-fedex-purple text-white p-6 sm:p-10 text-center relative overflow-hidden">
+                <div class="relative z-10">
+                    <span class="inline-block px-3 py-1 rounded-full bg-fedex-orange text-white text-xs font-black uppercase tracking-wider mb-3">
+                        Fast-Track Driver Application
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-black tracking-tight">Apply in 60 Seconds</h2>
+                    <p class="text-purple-200 text-sm sm:text-base mt-2 max-w-xl mx-auto">
+                        Fill out the quick form below. Your application goes straight to <strong class="text-white">Robert Alicea (914-500-8407)</strong> so we can get you on the road fast!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Form Body -->
+            <form id="driverApplicationForm" onsubmit="handleApplicationSubmit(event)" class="p-6 sm:p-10 space-y-6">
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Full Name -->
+                    <div>
+                        <label for="applicantName" class="block text-sm font-extrabold text-slate-800 mb-2">
+                            Full Name <span class="text-red-500">*</span>
+                        </label>
+                        <input type="text" id="applicantName" required placeholder="e.g. John Martinez"
+                            class="w-full px-4 py-3.5 rounded-xl border-2 border-slate-200 focus:border-fedex-purple focus:ring-4 focus:ring-purple-100 outline-none font-medium text-slate-900 transition-all">
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div>
+                        <label for="applicantPhone" class="block text-sm font-extrabold text-slate-800 mb-2">
+                            Cell Phone Number <span class="text-red-500">*</span>
+                        </label>
+                        <input type="tel" id="applicantPhone" required placeholder="e.g. (817) 555-0199"
+                            class="w-full px-4 py-3.5 rounded-xl border-2 border-slate-200 focus:border-fedex-purple focus:ring-4 focus:ring-purple-100 outline-none font-medium text-slate-900 transition-all">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Email Address -->
+                    <div>
+                        <label for="applicantEmail" class="block text-sm font-extrabold text-slate-800 mb-2">
+                            Email Address <span class="text-slate-400 font-normal text-xs">(Optional)</span>
+                        </label>
+                        <input type="email" id="applicantEmail" placeholder="you@example.com"
+                            class="w-full px-4 py-3.5 rounded-xl border-2 border-slate-200 focus:border-fedex-purple focus:ring-4 focus:ring-purple-100 outline-none font-medium text-slate-900 transition-all">
+                    </div>
+
+                    <!-- Preferred Area / Terminal -->
+                    <div>
+                        <label for="applicantArea" class="block text-sm font-extrabold text-slate-800 mb-2">
+                            Preferred Terminal / Area <span class="text-red-500">*</span>
+                        </label>
+                        <select id="applicantArea" required
+                            class="w-full px-4 py-3.5 rounded-xl border-2 border-slate-200 focus:border-fedex-purple focus:ring-4 focus:ring-purple-100 outline-none font-bold text-slate-800 bg-white transition-all">
+                            <option value="Fort Worth or Arlington (Open to Either)">Fort Worth or Arlington (Either is fine!)</option>
+                            <option value="Fort Worth Area Terminals">Fort Worth Area Terminals</option>
+                            <option value="Arlington Area Terminals">Arlington Area Terminals</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Preferred Schedule -->
+                    <div>
+                        <label for="applicantSchedule" class="block text-sm font-extrabold text-slate-800 mb-2">
+                            Which Schedule Do You Want? <span class="text-red-500">*</span>
+                        </label>
+                        <select id="applicantSchedule" required
+                            class="w-full px-4 py-3.5 rounded-xl border-2 border-slate-200 focus:border-fedex-purple focus:ring-4 focus:ring-purple-100 outline-none font-bold text-slate-800 bg-white transition-all">
+                            <option value="Weekdays / Full-Time Regular (5-6 Days)">Weekdays / Full-Time Regular (5-6 Days)</option>
+                            <option value="3 Days a Week (Part-Time Flex)">3 Days a Week (Part-Time Flex)</option>
+                            <option value="Weekends Only (Sat & Sun)">Weekends Only (Sat &amp; Sun)</option>
+                            <option value="Peak Season Rush / Custom Schedule">Peak Season Rush / Custom Schedule</option>
+                            <option value="Open to Any Schedule">Open to Any Schedule — Put Me Coach!</option>
+                        </select>
+                    </div>
+
+                    <!-- Driving Experience -->
+                    <div>
+                        <label for="applicantExperience" class="block text-sm font-extrabold text-slate-800 mb-2">
+                            Driving / Delivery Experience <span class="text-red-500">*</span>
+                        </label>
+                        <select id="applicantExperience" required
+                            class="w-full px-4 py-3.5 rounded-xl border-2 border-slate-200 focus:border-fedex-purple focus:ring-4 focus:ring-purple-100 outline-none font-bold text-slate-800 bg-white transition-all">
+                            <option value="FedEx / UPS / Amazon / Step Van Experience">FedEx / UPS / Amazon / Box Truck Experience</option>
+                            <option value="Commercial Driving Experience (1+ Years)">Commercial Driving Experience (1+ Years)</option>
+                            <option value="Gig Delivery (Uber / DoorDash / Flex / Instacart)">Gig Delivery (Uber, DoorDash, Flex, etc.)</option>
+                            <option value="Clean License & Ready to Work Hard">Valid License &amp; Ready to Work Hard</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Valid Driver's License Check -->
+                    <div>
+                        <label for="applicantLicense" class="block text-sm font-extrabold text-slate-800 mb-2">
+                            Do you have a Valid Driver's License? <span class="text-red-500">*</span>
+                        </label>
+                        <select id="applicantLicense" required
+                            class="w-full px-4 py-3.5 rounded-xl border-2 border-slate-200 focus:border-fedex-purple focus:ring-4 focus:ring-purple-100 outline-none font-bold text-emerald-700 bg-emerald-50/50 transition-all">
+                            <option value="Yes - Valid Driver's License">✅ Yes, I have a Valid Driver's License</option>
+                            <option value="Yes - Commercial / CDL License">✅ Yes, I have a CDL / Commercial License</option>
+                        </select>
+                    </div>
+
+                    <!-- Referred By (Driver Name) -->
+                    <div>
+                        <label for="applicantReferral" class="block text-sm font-extrabold text-slate-800 mb-2">
+                            Referred By <span class="text-slate-400 font-normal text-xs">(Did a C&amp;S Driver share this with you?)</span>
+                        </label>
+                        <input type="text" id="applicantReferral" placeholder="Driver's Name or Social Media"
+                            class="w-full px-4 py-3.5 rounded-xl border-2 border-slate-200 focus:border-fedex-purple focus:ring-4 focus:ring-purple-100 outline-none font-medium text-slate-900 transition-all">
+                    </div>
+                </div>
+
+                <!-- Availability / Quick Note -->
+                <div>
+                    <label for="applicantNotes" class="block text-sm font-extrabold text-slate-800 mb-2">
+                        When can you start? Any questions or schedule notes?
+                    </label>
+                    <textarea id="applicantNotes" rows="2" placeholder="e.g. Available to start immediately! Prefer Fort Worth terminal, can work weekends and Mondays..."
+                        class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-fedex-purple focus:ring-4 focus:ring-purple-100 outline-none font-medium text-slate-900 transition-all"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="pt-2">
+                    <button type="submit" id="submitBtn"
+                        class="w-full py-4 px-6 rounded-2xl bg-fedex-orange hover:bg-fedex-orangeHover text-white font-black text-lg sm:text-xl shadow-glow-orange transition-all transform hover:-translate-y-0.5 active:scale-98 flex items-center justify-center gap-3">
+                        <span>🚀 Submit My Application Now</span>
+                    </button>
+                    <p class="text-center text-xs text-slate-500 mt-3 font-medium">
+                        🔒 Your info is sent directly to Hiring Manager <strong>Robert Alicea (914-500-8407)</strong> at C&amp;S Services Inc.
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- DRIVER VIRAL SHARE & SOCIAL MEDIA TOOLKIT HUB -->
+    <section id="share-hub" class="py-16 bg-gradient-to-b from-purple-50 to-white border-t border-purple-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="px-3.5 py-1.5 rounded-full bg-fedex-purple text-white font-extrabold text-xs uppercase tracking-wider">
+                    For Current C&amp;S Drivers &amp; Friends
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3 tracking-tight">
+                    Help Us Grow the Squad — <span class="text-fedex-purple">Share This Page!</span>
+                </h2>
+                <p class="text-slate-600 mt-3 text-base sm:text-lg">
+                    Are you one of our drivers? Put this link on your <strong>Instagram, Facebook, TikTok, WhatsApp, or Nextdoor</strong>—or show the QR code to good people you meet out on your route!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                
+                <!-- Left Card: Driver Referral Link Generator & Ready-to-Post Captions -->
+                <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200 flex flex-col justify-between space-y-6">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="w-10 h-10 rounded-xl bg-fedex-orange/15 text-fedex-orange flex items-center justify-center font-black text-xl">📲</span>
+                            <div>
+                                <h3 class="text-xl font-black text-slate-900">1. Create Your Driver Referral Link</h3>
+                                <p class="text-xs text-slate-500 font-medium">Enter your name so when people click your link, we know YOU brought them in!</p>
+                            </div>
+                        </div>
+
+                        <!-- Driver Name Input for Custom Link -->
+                        <div class="flex flex-col sm:flex-row gap-3 mb-6">
+                            <input type="text" id="driverReferrerInput" oninput="updateReferralShareLink()" placeholder="Type your name (e.g. Jamal, Jose, Mark)..."
+                                class="flex-1 px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-fedex-purple outline-none font-bold text-slate-800 text-sm">
+                            <button onclick="copyReferralLink()" class="px-5 py-3 rounded-xl bg-fedex-purple hover:bg-fedex-purpleDark text-white font-extrabold text-sm shrink-0 transition-all">
+                                📋 Copy My Link
+                            </button>
+                            <button onclick="triggerNativeShare()" class="px-5 py-3 rounded-xl bg-fedex-orange hover:bg-fedex-orangeHover text-white font-extrabold text-sm shrink-0 transition-all">
+                                📤 Share Now
+                            </button>
+                        </div>
+
+                        <!-- Ready-to-Copy Social Media Posts -->
+                        <div class="space-y-4">
+                            <h4 class="text-xs font-black uppercase tracking-wider text-slate-400">2. One-Tap Copy Social Media Posts (FB, IG, Texts)</h4>
+
+                            <!-- Caption 1: Facebook / Instagram Story & Feed -->
+                            <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-xs font-extrabold text-fedex-purple">🔥 Facebook / Instagram / TikTok Post</span>
+                                    <button onclick="copySocialCaption('caption1')" class="text-xs font-extrabold bg-white px-3 py-1 rounded-lg border border-slate-300 hover:border-fedex-orange hover:text-fedex-orange transition-all">
+                                        Copy Post
+                                    </button>
+                                </div>
+                                <p id="caption1" class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+                                    🚚 NOW HIRING FEDEX GROUND DRIVERS in Fort Worth &amp; Arlington! My company (C&amp;S Services Inc.) is hiring reliable drivers for Peak Season &amp; Regular spots. Flexible schedules: Weekdays, 3 days a week, or Weekends! Great team that actually has your back. Valid driver's license needed (No CDL). Call/Text Robert at 914-500-8407 or apply in 60 seconds here:
+                                </p>
+                            </div>
+
+                            <!-- Caption 2: Quick Text / WhatsApp to a Friend -->
+                            <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-xs font-extrabold text-emerald-700">💬 Quick Text / WhatsApp to Friends</span>
+                                    <button onclick="copySocialCaption('caption2')" class="text-xs font-extrabold bg-white px-3 py-1 rounded-lg border border-slate-300 hover:border-fedex-orange hover:text-fedex-orange transition-all">
+                                        Copy Text
+                                    </button>
+                                </div>
+                                <p id="caption2" class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+                                    Hey! We’re hiring FedEx Ground drivers at C&amp;S Services in Fort Worth &amp; Arlington. You can work Full-Time, 3 days a week, or just Weekends. Super supportive management and great environment. Call Robert Alicea at 914-500-8407 or apply quick right here:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Card: Live In-Person QR Code Badge -->
+                <div class="lg:col-span-5 bg-fedex-purple text-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col items-center justify-between text-center relative overflow-hidden">
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-white/15 text-orange-300 text-xs font-black uppercase tracking-wider mb-2">
+                            Recruit On The Spot
+                        </span>
+                        <h3 class="text-2xl font-black">In-Person Scan &amp; Apply</h3>
+                        <p class="text-xs sm:text-sm text-purple-200 mt-1">
+                            Meet someone reliable in Fort Worth or Arlington? Have them point their phone camera at this QR code to open the hiring page immediately!
+                        </p>
+                    </div>
+
+                    <!-- Dynamic QR Code Image Container -->
+                    <div class="my-6 bg-white p-4 rounded-3xl shadow-2xl inline-block">
+                        <img id="liveQrCodeImg" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&color=4D148C&data=https://github.com" 
+                             alt="Scan to Apply QR Code" 
+                             class="w-44 h-44 sm:w-48 sm:h-48 rounded-xl mx-auto"
+                             onerror="this.style.display='none'">
+                        <span class="block text-[11px] font-black text-fedex-purple uppercase tracking-wider mt-2">
+                            Scan With Phone Camera
+                        </span>
+                    </div>
+
+                    <div class="w-full space-y-2">
+                        <div class="bg-white/10 rounded-xl p-3 text-xs font-bold text-purple-100 border border-white/15">
+                            Direct Hiring Contact: <strong class="text-white">Robert Alicea • 914-500-8407</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+            <div>
+                <div class="flex items-center justify-center sm:justify-start gap-2 text-white font-black text-lg">
+                    <span>C&amp;S SERVICES INC.</span>
+                    <span class="text-xs px-2 py-0.5 rounded bg-fedex-orange text-white">FedEx Ground ISP</span>
+                </div>
+                <p class="text-xs text-slate-500 mt-1">
+                    Operating in Fort Worth &amp; Arlington, TX Terminals • Equal Opportunity Employer
+                </p>
+                <p class="text-xs text-slate-400 mt-1 font-semibold">
+                    Hiring Manager: Robert Alicea — <a href="tel:9145008407" class="text-fedex-orange hover:underline">(914) 500-8407</a>
+                </p>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <button onclick="openManagerModal()" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 text-xs font-bold flex items-center gap-1.5 transition-all">
+                    <span>🔒</span> Manager Notification Setup &amp; Inbox (<span id="savedAppsCountBadge">0</span>)
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE BOTTOM BAR -->
+    <div class="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-white/95 backdrop-blur-md border-t border-slate-200 p-2.5 shadow-2xl">
+        <div class="grid grid-cols-3 gap-2 max-w-md mx-auto">
+            <a href="tel:9145008407" class="py-3 px-2 rounded-xl bg-fedex-purple text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow">
+                <span>📞</span> Call Robert
+            </a>
+            <a href="sms:9145008407?body=Hi%20Robert,%20I%20saw%20the%20C%26S%20Services%20FedEx%20Ground%20hiring%20page%20and%20I%20want%20to%20apply!" class="py-3 px-2 rounded-xl bg-slate-800 text-white font-extrabold text-xs flex items-center justify-center gap-1.5 shadow">
+                <span>💬</span> Text Us
+            </a>
+            <a href="#apply-form" class="py-3 px-2 rounded-xl bg-fedex-orange text-white font-black text-xs flex items-center justify-center gap-1.5 shadow">
+                <span>🚀</span> Apply Now
+            </a>
+        </div>
+    </div>
+
+    <!-- APPLICATION CONFIRMATION & INSTANT NOTIFICATION MODAL -->
+    <div id="confirmationModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-100 text-center space-y-5 animate-float">
+            <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-3xl mx-auto font-black shadow-inner">
+                ✓
+            </div>
+            <div>
+                <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 font-extrabold text-xs uppercase">Application Logged!</span>
+                <h3 class="text-2xl font-black text-slate-900 mt-2">Awesome! Almost Done, <span id="confirmApplicantName">Driver</span>!</h3>
+                <p id="emailAlertStatusText" class="text-sm text-slate-600 mt-2 leading-relaxed">
+                    Your application has been saved! To put your name at the very top of <strong>Robert Alicea's</strong> phone right now, tap the orange button below to send your instant text alert:
+                </p>
+            </div>
+
+            <!-- Instant 1-Tap SMS Notification to Robert -->
+            <div class="space-y-3 pt-2">
+                <a id="instantSmsTriggerBtn" href="#" class="w-full py-4 px-5 rounded-2xl bg-fedex-orange hover:bg-fedex-orangeHover text-white font-black text-base shadow-glow-orange flex items-center justify-center gap-2 transition-all">
+                    <span>📲 Send Instant Text Alert to Robert</span>
+                </a>
+                <a href="tel:9145008407" class="w-full py-3.5 px-5 rounded-2xl bg-fedex-purple hover:bg-fedex-purpleDark text-white font-bold text-sm flex items-center justify-center gap-2 transition-all">
+                    <span>📞 Or Call Robert Now: (914) 500-8407</span>
+                </a>
+                <button onclick="closeConfirmationModal()" class="w-full py-2.5 text-xs font-bold text-slate-400 hover:text-slate-600">
+                    Close Window
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SHARE MODAL (QUICK POPUP) -->
+    <div id="shareModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-7 shadow-2xl space-y-5">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                <h3 class="text-lg font-black text-fedex-purple">📤 Share Hiring Page</h3>
+                <button onclick="closeShareModal()" class="text-slate-400 hover:text-slate-700 font-bold text-xl">&times;</button>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600">
+                Share this link on your social media or send it to anyone looking for a great driving job in Fort Worth or Arlington:
+            </p>
+            <div class="flex gap-2">
+                <input type="text" id="modalShareUrlInput" readonly class="flex-1 px-3 py-2.5 rounded-xl bg-slate-100 border border-slate-200 text-xs font-bold text-slate-700 outline-none">
+                <button onclick="copyModalShareUrl()" class="px-4 py-2.5 rounded-xl bg-fedex-purple text-white font-extrabold text-xs">
+                    Copy
+                </button>
+            </div>
+            <div class="grid grid-cols-2 gap-3 pt-1">
+                <button onclick="triggerNativeShare()" class="py-3 px-4 rounded-xl bg-fedex-orange text-white font-extrabold text-xs flex items-center justify-center gap-1.5">
+                    <span>📱</span> Share to Apps
+                </button>
+                <a href="#share-hub" onclick="closeShareModal()" class="py-3 px-4 rounded-xl bg-slate-100 text-slate-800 font-extrabold text-xs flex items-center justify-center gap-1.5">
+                    <span>🔳</span> View QR &amp; Posts
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MANAGER PORTAL MODAL (PIN 7170928 - CONFIGURE EMAIL/WEBHOOK & VIEW SAVED LEADS) -->
+    <div id="managerModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl my-8 space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+                <div>
+                    <span class="text-[11px] font-black uppercase tracking-wider text-fedex-orange">C&amp;S Services Admin</span>
+                    <h3 class="text-xl font-black text-fedex-purple">Manager Notification Setup &amp; Applicant Inbox</h3>
+                </div>
+                <button onclick="closeManagerModal()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center font-bold text-slate-600">&times;</button>
+            </div>
+
+            <!-- PIN Lock Screen -->
+            <div id="managerPinScreen" class="space-y-4 py-4 text-center">
+                <p class="text-sm text-slate-600 font-medium">Enter your Manager PIN (<code class="bg-slate-100 px-1.5 py-0.5 rounded font-bold">7170928</code>) to configure automatic Email/Webhook alerts and view saved applicants.</p>
+                <div class="flex max-w-xs mx-auto gap-2">
+                    <input type="password" id="managerPinInput" placeholder="Enter PIN" class="flex-1 px-4 py-3 rounded-xl border-2 border-slate-200 text-center font-black tracking-widest text-lg outline-none focus:border-fedex-purple">
+                    <button onclick="unlockManagerPortal()" class="px-5 py-3 rounded-xl bg-fedex-purple text-white font-extrabold text-sm">Unlock</button>
+                </div>
+                <p id="managerPinError" class="text-xs font-bold text-red-600 hidden">Incorrect PIN. Try 7170928.</p>
+            </div>
+
+            <!-- Unlocked Manager Content -->
+            <div id="managerUnlockedContent" class="hidden space-y-6">
+                
+                <!-- How Notifications Work on GitHub Pages -->
+                <div class="bg-purple-50 border border-purple-200 rounded-2xl p-4 space-y-3">
+                    <h4 class="text-sm font-black text-fedex-purple flex items-center gap-1.5">
+                        <span>🔔</span> Automatic Email &amp; Webhook Notifications
+                    </h4>
+                    <p class="text-xs text-slate-700 leading-relaxed">
+                        Because GitHub Pages is a static host, this page uses <strong>3 ways</strong> to make sure you never miss an applicant:
+                    </p>
+                    <ol class="text-xs text-slate-700 list-decimal list-inside space-y-1 font-medium">
+                        <li><strong>Instant SMS Push:</strong> Every applicant is prompted to send a 1-tap pre-filled text message directly to <strong>914-500-8407</strong>.</li>
+                        <li><strong>Free Automatic Email Alerts (FormSubmit):</strong> Enter your email below (or edit <code class="bg-white px-1 rounded">MANAGER_NOTIFICATION_EMAIL</code> at the top of the HTML code) to get every application emailed to you automatically!</li>
+                        <li><strong>Google Sheets / Webhook URL (Optional):</strong> Paste a Zapier, Make.com, or Google Apps Script Webhook URL to log rows to a spreadsheet.</li>
+                    </ol>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                        <div>
+                            <label class="block text-[11px] font-extrabold uppercase text-slate-600 mb-1">Notification Email (FormSubmit.co)</label>
+                            <input type="email" id="configEmailInput" placeholder="e.g. robert@example.com" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs font-bold">
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-extrabold uppercase text-slate-600 mb-1">Optional Webhook URL (Google Sheets/Discord)</label>
+                            <input type="url" id="configWebhookInput" placeholder="https://..." class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs font-bold">
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <button onclick="saveManagerConfig()" class="px-4 py-2 rounded-xl bg-fedex-orange text-white font-extrabold text-xs">
+                            💾 Save Notification Settings
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Saved Applications Table -->
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <h4 class="text-sm font-black text-slate-900">📋 Applications Saved on This Device</h4>
+                        <div class="flex gap-2">
+                            <button onclick="exportApplicationsCSV()" class="px-3 py-1.5 rounded-lg bg-emerald-600 text-white font-bold text-xs">
+                                ⬇ Export CSV
+                            </button>
+                            <button onclick="clearApplications()" class="px-3 py-1.5 rounded-lg bg-red-100 text-red-700 font-bold text-xs">
+                                Clear All
+                            </button>
+                        </div>
+                    </div>
+                    <div id="savedApplicationsList" class="max-h-64 overflow-y-auto space-y-2 border border-slate-200 rounded-2xl p-3 bg-slate-50">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toastBanner" class="fixed top-5 right-5 z-50 hidden bg-slate-900 text-white px-5 py-3.5 rounded-2xl shadow-2xl border border-slate-700 flex items-center gap-2.5 text-xs sm:text-sm font-bold">
+        <span id="toastIcon">✅</span>
+        <span id="toastMessage">Copied to clipboard!</span>
+    </div>
+
+    <!-- APPLICATION & SHARE LOGIC -->
+    <script>
+        // ============================================================================
+        // ⚙️ EASY GITHUB CONFIGURATION FOR ROBERT ALICEA
+        // ============================================================================
+        // Tip: Put your email address inside the quotes below before uploading to GitHub
+        // so every visitor's application automatically emails you via FormSubmit.co!
+        const DEFAULT_MANAGER_EMAIL = ""; // e.g. "robert@cnsservices.com"
+        const DEFAULT_WEBHOOK_URL   = ""; // Optional: Discord / Slack / Make / Google Sheet Webhook URL
+        const MANAGER_PHONE_NUMBER  = "9145008407";
+        const MANAGER_PIN           = "7170928";
+
+        const STORAGE_KEY_APPS   = "cns_fedex_applications_v1";
+        const STORAGE_KEY_CONFIG = "cns_fedex_manager_config_v1";
+
+        // Initialize page on load
+        window.addEventListener('DOMContentLoaded', () => {
+            initReferralFromUrl();
+            updateReferralShareLink();
+            updateSavedAppsBadge();
+            loadManagerConfigIntoInputs();
+        });
+
+        // 1. Check if URL has ?ref=DriverName and pre-fill Referral input
+        function initReferralFromUrl() {
+            try {
+                const params = new URLSearchParams(window.location.search);
+                const ref = params.get('ref');
+                if (ref && ref.trim() !== "") {
+                    const cleanRef = ref.trim();
+                    const refInput = document.getElementById('applicantReferral');
+                    if (refInput) refInput.value = cleanRef;
+
+                    const banner = document.getElementById('referralWelcomeBanner');
+                    const bannerText = document.getElementById('referralWelcomeText');
+                    if (banner && bannerText) {
+                        bannerText.textContent = `🎉 You were invited by ${cleanRef} from the C&S Services Squad! Fast-track application enabled.`;
+                        banner.classList.remove('hidden');
+                    }
+                }
+            } catch (e) {
+                console.error("URL param check error:", e);
+            }
+        }
+
+        // 2. Interactive Schedule Card Selection
+        function selectScheduleCard(scheduleValue, cardEl) {
+            // Highlight selected card
+            document.querySelectorAll('.schedule-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            if (cardEl) cardEl.classList.add('selected');
+
+            // Set dropdown value
+            const selectEl = document.getElementById('applicantSchedule');
+            if (selectEl) {
+                selectEl.value = scheduleValue;
+            }
+
+            // Smooth scroll to application form
+            const formSection = document.getElementById('apply-form');
+            if (formSection) {
+                formSection.scrollIntoView({ behavior: 'smooth' });
+            }
+            showToast(`Selected: ${scheduleValue}`);
+        }
+
+        // 3. Handle Driver Application Submission
+        async function handleApplicationSubmit(event) {
+            event.preventDefault();
+
+            const submitBtn = document.getElementById('submitBtn');
+            const originalBtnHtml = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<span>⏳ Sending Application...</span>`;
+
+            const application = {
+                id: Date.now(),
+                timestamp: new Date().toLocaleString(),
+                name: document.getElementById('applicantName').value.trim(),
+                phone: document.getElementById('applicantPhone').value.trim(),
+                email: document.getElementById('applicantEmail').value.trim() || "Not provided",
+                area: document.getElementById('applicantArea').value,
+                schedule: document.getElementById('applicantSchedule').value,
+                experience: document.getElementById('applicantExperience').value,
+                license: document.getElementById('applicantLicense').value,
+                referral: document.getElementById('applicantReferral').value.trim() || "Direct / Ad",
+                notes: document.getElementById('applicantNotes').value.trim() || "None"
+            };
+
+            // A. Save to LocalStorage
+            saveApplicationLocally(application);
+
+            // B. Build Instant SMS URL for Robert Alicea (914-500-8407)
+            const smsLines = [
+                `🚚 NEW C&S FEDEX DRIVER APP!`,
+                `Name: ${application.name}`,
+                `Phone: ${application.phone}`,
+                `Area: ${application.area}`,
+                `Schedule: ${application.schedule}`,
+                `Exp: ${application.experience}`,
+                `License: ${application.license}`,
+                `Ref: ${application.referral}`,
+                `Notes: ${application.notes}`
+            ].join('\n');
+
+            const smsHref = `sms:${MANAGER_PHONE_NUMBER}?body=${encodeURIComponent(smsLines)}`;
+            const smsBtn = document.getElementById('instantSmsTriggerBtn');
+            if (smsBtn) smsBtn.setAttribute('href', smsHref);
+
+            // C. Send Cloud Email / Webhook Notification if configured
+            const config = getManagerConfig();
+            let cloudNotified = false;
+
+            // Try FormSubmit.co AJAX if email is set
+            if (config.email && config.email.includes('@')) {
+                try {
+                    const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(config.email)}`, {
+                        method: "POST",
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            _subject: `🚚 New C&S Driver Application: ${application.name} (${application.schedule})`,
+                            Full_Name: application.name,
+                            Phone_Number: application.phone,
+                            Email: application.email,
+                            Preferred_Terminal: application.area,
+                            Preferred_Schedule: application.schedule,
+                            Driving_Experience: application.experience,
+                            Valid_License: application.license,
+                            Referred_By: application.referral,
+                            Availability_Notes: application.notes,
+                            Submitted_At: application.timestamp
+                        })
+                    });
+                    if (response.ok) cloudNotified = true;
+                } catch (err) {
+                    console.warn("FormSubmit notice:", err);
+                }
+            }
+
+            // Try Custom Webhook if configured
+            if (config.webhook && config.webhook.startsWith('http')) {
+                try {
+                    await fetch(config.webhook, {
+                        method: "POST",
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(application)
+                    });
+                    cloudNotified = true;
+                } catch (err) {
+                    console.warn("Webhook notice:", err);
+                }
+            }
+
+            // Reset button & form
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnHtml;
+            document.getElementById('driverApplicationForm').reset();
+
+            // Show Confirmation Modal
+            document.getElementById('confirmApplicantName').textContent = application.name.split(' ')[0];
+            const statusText = document.getElementById('emailAlertStatusText');
+            if (cloudNotified) {
+                statusText.innerHTML = `Your application has been emailed directly to <strong>Robert Alicea</strong>! For the fastest response today, tap below to also send Robert a quick text message:`;
+            } else {
+                statusText.innerHTML = `Your application is ready! Tap the orange button below to send your application details directly to <strong>Robert Alicea's phone (914-500-8407)</strong> via text message for an immediate callback:`;
+            }
+
+            document.getElementById('confirmationModal').classList.remove('hidden');
+        }
+
+        function closeConfirmationModal() {
+            document.getElementById('confirmationModal').classList.add('hidden');
+        }
+
+        // 4. Referral & Share Link Builder
+        function getCleanBaseUrl() {
+            return window.location.origin + window.location.pathname;
+        }
+
+        function getPersonalizedShareUrl() {
+            const driverInput = document.getElementById('driverReferrerInput');
+            const driverName = driverInput ? driverInput.value.trim() : "";
+            const baseUrl = getCleanBaseUrl();
+            if (driverName) {
+                return `${baseUrl}?ref=${encodeURIComponent(driverName)}`;
+            }
+            return window.location.href;
+        }
+
+        function updateReferralShareLink() {
+            const shareUrl = getPersonalizedShareUrl();
+            const modalInput = document.getElementById('modalShareUrlInput');
+            if (modalInput) modalInput.value = shareUrl;
+
+            // Update Live QR Code to point to the current live link
+            const qrImg = document.getElementById('liveQrCodeImg');
+            if (qrImg) {
+                qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&color=4D148C&data=${encodeURIComponent(shareUrl)}`;
+            }
+        }
+
+        function copyReferralLink() {
+            const url = getPersonalizedShareUrl();
+            copyTextToClipboard(url, "Referral Link copied! Paste it on your social media!");
+        }
+
+        function copyModalShareUrl() {
+            const url = getPersonalizedShareUrl();
+            copyTextToClipboard(url, "Hiring page link copied!");
+        }
+
+        function copySocialCaption(captionId) {
+            const el = document.getElementById(captionId);
+            if (!el) return;
+            const url = getPersonalizedShareUrl();
+            const fullPost = `${el.innerText.trim()} ${url}`;
+            copyTextToClipboard(fullPost, "Post + Link copied! Ready to paste on Social Media!");
+        }
+
+        async function triggerNativeShare() {
+            const url = getPersonalizedShareUrl();
+            const shareData = {
+                title: "Now Hiring FedEx Ground Drivers | C&S Services Inc.",
+                text: "🚚 We're hiring FedEx Ground Drivers in Fort Worth & Arlington! Flexible schedules (Weekdays, 3 Days/Wk, Weekends, Peak Season). Great team! Call Robert at 914-500-8407 or apply here:",
+                url: url
+            };
+
+            if (navigator.share) {
+                try {
+                    await navigator.share(shareData);
+                } catch (err) {
+                    // User cancelled or share failed; fallback to copy
+                }
+            } else {
+                copyTextToClipboard(`${shareData.text} ${url}`, "Share message & link copied to clipboard!");
+            }
+        }
+
+        // 5. Clipboard Helper (iFrame & Mobile Safe using execCommand)
+        function copyTextToClipboard(text, successMsg) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.position = "fixed";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                showToast(successMsg || "Copied to clipboard!");
+            } catch (err) {
+                showToast("Could not copy automatically. Please copy the link from your browser.");
+            }
+            document.body.removeChild(textArea);
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toastBanner');
+            const msgEl = document.getElementById('toastMessage');
+            if (!toast || !msgEl) return;
+            msgEl.textContent = message;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3500);
+        }
+
+        // 6. Share Modal Controls
+        function openShareModal() {
+            updateReferralShareLink();
+            document.getElementById('shareModal').classList.remove('hidden');
+        }
+        function closeShareModal() {
+            document.getElementById('shareModal').classList.add('hidden');
+        }
+
+        // 7. Manager Portal & Local Storage Engine
+        function getSavedApplications() {
+            try {
+                const raw = localStorage.getItem(STORAGE_KEY_APPS);
+                return raw ? JSON.parse(raw) : [];
+            } catch (e) {
+                return [];
+            }
+        }
+
+        function saveApplicationLocally(appObj) {
+            const list = getSavedApplications();
+            list.unshift(appObj);
+            localStorage.setItem(STORAGE_KEY_APPS, JSON.stringify(list));
+            updateSavedAppsBadge();
+        }
+
+        function updateSavedAppsBadge() {
+            const list = getSavedApplications();
+            const badge = document.getElementById('savedAppsCountBadge');
+            if (badge) badge.textContent = list.length;
+        }
+
+        function getManagerConfig() {
+            try {
+                const raw = localStorage.getItem(STORAGE_KEY_CONFIG);
+                const parsed = raw ? JSON.parse(raw) : {};
+                return {
+                    email: parsed.email || DEFAULT_MANAGER_EMAIL,
+                    webhook: parsed.webhook || DEFAULT_WEBHOOK_URL
+                };
+            } catch (e) {
+                return { email: DEFAULT_MANAGER_EMAIL, webhook: DEFAULT_WEBHOOK_URL };
+            }
+        }
+
+        function loadManagerConfigIntoInputs() {
+            const cfg = getManagerConfig();
+            const emailInput = document.getElementById('configEmailInput');
+            const webhookInput = document.getElementById('configWebhookInput');
+            if (emailInput) emailInput.value = cfg.email;
+            if (webhookInput) webhookInput.value = cfg.webhook;
+        }
+
+        function saveManagerConfig() {
+            const email = document.getElementById('configEmailInput').value.trim();
+            const webhook = document.getElementById('configWebhookInput').value.trim();
+            localStorage.setItem(STORAGE_KEY_CONFIG, JSON.stringify({ email, webhook }));
+            showToast("Notification settings saved!");
+        }
+
+        function openManagerModal() {
+            document.getElementById('managerModal').classList.remove('hidden');
+            renderSavedApplicationsList();
+        }
+
+        function closeManagerModal() {
+            document.getElementById('managerModal').classList.add('hidden');
+        }
+
+        function unlockManagerPortal() {
+            const pinInput = document.getElementById('managerPinInput').value.trim().replace('-', '');
+            const errEl = document.getElementById('managerPinError');
+            if (pinInput === MANAGER_PIN) {
+                errEl.classList.add('hidden');
+                document.getElementById('managerPinScreen').classList.add('hidden');
+                document.getElementById('managerUnlockedContent').classList.remove('hidden');
+                renderSavedApplicationsList();
+            } else {
+                errEl.classList.remove('hidden');
+            }
+        }
+
+        function renderSavedApplicationsList() {
+            const container = document.getElementById('savedApplicationsList');
+            if (!container) return;
+            const list = getSavedApplications();
+            if (list.length === 0) {
+                container.innerHTML = `<p class="text-xs text-slate-400 text-center py-6">No applications saved on this device yet.</p>`;
+                return;
+            }
+            container.innerHTML = list.map(app => `
+                <div class="bg-white p-3.5 rounded-xl border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="font-black text-sm text-slate-900">${escapeHtml(app.name)}</span>
+                            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-purple-100 text-fedex-purple">${escapeHtml(app.schedule)}</span>
+                        </div>
+                        <p class="text-xs text-slate-600 mt-0.5">
+                            📍 ${escapeHtml(app.area)} • 🚗 ${escapeHtml(app.experience)} • Ref: <strong>${escapeHtml(app.referral)}</strong>
+                        </p>
+                        <p class="text-[11px] text-slate-400 mt-0.5">${escapeHtml(app.timestamp)} — Notes: ${escapeHtml(app.notes)}</p>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <a href="tel:${escapeHtml(app.phone)}" class="px-3 py-1.5 rounded-lg bg-emerald-600 text-white font-bold text-xs">📞 ${escapeHtml(app.phone)}</a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function exportApplicationsCSV() {
+            const list = getSavedApplications();
+            if (list.length === 0) {
+                showToast("No applications to export yet.");
+                return;
+            }
+            const headers = ["Timestamp", "Name", "Phone", "Email", "Area", "Schedule", "Experience", "License", "Referral", "Notes"];
+            const rows = list.map(a => [
+                a.timestamp, a.name, a.phone, a.email, a.area, a.schedule, a.experience, a.license, a.referral, a.notes
+            ].map(val => `"${String(val || '').replace(/"/g, '""')}"`).join(','));
+
+            const csvContent = "data:text/csv;charset=utf-8," + [headers.join(','), ...rows].join('\n');
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", "CNS_Services_Driver_Applicants.csv");
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function clearApplications() {
+            localStorage.removeItem(STORAGE_KEY_APPS);
+            updateSavedAppsBadge();
+            renderSavedApplicationsList();
+            showToast("Cleared saved applications on this device.");
+        }
+
+        function escapeHtml(str) {
+            return String(str || '')
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;");
+        }
+    </script>
+</body>
+</html>
