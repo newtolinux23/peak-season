@@ -167,7 +167,7 @@
                 </div>
                 <div class="flex items-center gap-2.5 bg-white/10 px-3.5 py-2.5 rounded-xl border border-white/10">
                     <span class="text-emerald-400 text-base">🚚</span>
-                    <span data-en="Company Truck + Gas Covered — Save Your Own Car!" data-es="Camión de la Compañía + Gasolina Incluida">Company Truck + Gas Covered — Save Your Own Car!)</span>
+                    <span data-en="Company Truck + Gas Covered — Save Your Own Car!" data-es="Camión de la Compañía + Gasolina Incluida">Company Truck + Gas Covered — Save Your Own Car!</span>
                 </div>
                 <div class="flex items-center gap-2.5 bg-white/10 px-3.5 py-2.5 rounded-xl border border-white/10">
                     <span class="text-emerald-400 text-base">🤝</span>
@@ -362,6 +362,7 @@ Stop ruining your personal car doing gig work—come drive our trucks at C&S Ser
         // Toggle between English & Spanish instantaneously
         function toggleLanguage() {
             currentLang = currentLang === 'en' ? 'es' : 'en';
+            document.documentElement.lang = currentLang;
             const btn = document.getElementById('langToggleBtn');
             btn.innerHTML = currentLang === 'en' ? '🇲🇽 Español' : '🇺🇸 English';
 
@@ -424,7 +425,25 @@ Stop ruining your personal car doing gig work—come drive our trucks at C&S Ser
             document.getElementById('qrModal').classList.add('hidden');
         }
 
+        // Close the QR modal by tapping the dark background or pressing Escape
+        document.getElementById('qrModal').addEventListener('click', (e) => {
+            if (e.target.id === 'qrModal') closeQrModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeQrModal();
+        });
+
         function copyToClipboard(text, msg) {
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text)
+                    .then(() => showToast(msg))
+                    .catch(() => legacyCopy(text, msg));
+                return;
+            }
+            legacyCopy(text, msg);
+        }
+
+        function legacyCopy(text, msg) {
             const ta = document.createElement('textarea');
             ta.value = text;
             ta.style.position = 'fixed';
@@ -438,11 +457,13 @@ Stop ruining your personal car doing gig work—come drive our trucks at C&S Ser
             document.body.removeChild(ta);
         }
 
+        let toastTimer = null;
         function showToast(msg) {
             const toast = document.getElementById('toast');
             document.getElementById('toastText').textContent = msg;
             toast.classList.remove('hidden');
-            setTimeout(() => toast.classList.add('hidden'), 3000);
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => toast.classList.add('hidden'), 3000);
         }
     </script>
 </body>
